@@ -19,6 +19,7 @@ Bundle 'The-NERD-tree'
 Bundle 'fugitive.vim'
 Bundle 'vimwiki'
 Bundle 'clang-complete'
+Bundle 'mattn/calendar-vim'
 
 "-----<General>
 set nocompatible

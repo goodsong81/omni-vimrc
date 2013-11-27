@@ -20,6 +20,8 @@ Bundle 'fugitive.vim'
 Bundle 'vimwiki'
 Bundle 'clang-complete'
 Bundle 'mattn/calendar-vim'
+Bundle 'AutoComplPop'
+Bundle 'python.vim'
 
 "-----<General>
 set nocompatible
@@ -36,7 +38,7 @@ set fileformats=unix,dos,mac
 
 "-----<UI>
 syntax on
-colorscheme desert
+"colorscheme desert
 set background=dark
 set number
 set nowrap

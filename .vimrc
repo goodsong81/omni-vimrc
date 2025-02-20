@@ -1,27 +1,25 @@
 "============ Songki Choi's vim setting ============
-"- Last edit: Nov 27th, 2013
+"- Last edit: 2025/02/20
 "
 
 "-----<Vundle>
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " My bundles here:
-Bundle 'taglist.vim'
-Bundle 'The-NERD-tree'
-Bundle 'fugitive.vim'
-Bundle 'vimwiki'
-Bundle 'clang-complete'
-Bundle 'mattn/calendar-vim'
-Bundle 'AutoComplPop'
-Bundle 'python.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-futigive'
+Plugin 'vim-airline/vim-airline'
+"Plugin 'valloric/youcompleteme'
+
+call vundle#end()
 
 "-----<General>
 set nocompatible
@@ -66,7 +64,7 @@ set vb t_vb= "sound off
 let Tlist_Auto_Open=1
 let Tlist_Exit_OnlyWindow=1
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-let NERDTreeWinPos="right"
+let NERDTreeWinPos="left"
 
 let g:molokai_original = 1
 
